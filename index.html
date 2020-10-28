@@ -1,37 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hola soy Leonidas Esteban!</title>
   </head>
   <body>
-    <header>
-      <!-- Navigation Menu -->
-      <nav>
-        <!--Logo-->
+    <header class="header">
+      <div>
+        <figure class="logo">
+          <!--Logo-->
+          <img src="img/logo.png" alt="Logo de http://leonidasesteban.com" />
+        </figure>
+      </div>
+      <!-- Menu -->
+      <nav class="menu">
         <ul>
           <li>
-            <a href="#">Portafolio</a>
+            <a class="link" href="#portafolio">Portafolio</a>
           </li>
           <li>
-            <a href="#">Experiencia</a>
+            <a class="link" href="#eventos">Experiencia</a>
           </li>
           <li>
-            <a href="#">Trabajemos Juntos</a>
+            <a class="link" href="#contacto">Trabajemos Juntos</a>
           </li>
         </ul>
-
-        <!--Menu-->
       </nav>
-      <!-- End of Navigation Menu -->
+      <!-- End of Menu -->
     </header>
 
-    <section>sección principal</section>
-    <section>sección portafolio</section>
-    <section>sección eventos</section>
-    <section>sección contacto</section>
+    <section class="hero">
+      <h1>
+        Hola! Soy <strong> Leonidas Esteban </strong> <br />
+        Desarrollador <strong> Javascript </strong> <br />
+        con pasión por la enseñanza
+      </h1>
+      <img src="img/hero.png" width="500" alt="" />
+    </section>
 
-    <footer>footer</footer>
+    <!-- Sección Portafolio -->
+    <section id="portafolio">
+      <h2>Portafolio (Proyectos destacados)</h2>
+      <article class="project">
+        <h3 class="project-title">Platzi Video</h3>
+        <h6 class="project-course">React Native / React</h6>
+        <p class="project-date">
+          <small><strong>Fecha: </strong> 01/07/2018</small>
+        </p>
+        <p class="project-url">
+          <small><strong>Puedes verlo en: </strong> platzi.com/native</small>
+        </p>
+        <p class="project-description">
+          Platzi Video fue el resultado de 3 meses de trabajo para crear la
+          mejor app para enseñar el funcionamiento de React y React Native.
+          Desde crear un vista-detalle, hasta patrones avanzados
+        </p>
+        <figure class="project-imageContainer">
+          <img
+            class="project-image"
+            src="img/platzi-video-react-native.png"
+            width="500px"
+            alt="proyecto del curso React Native"
+          />
+        </figure>
+      </article>
+
+      <!-- End of Sección Portafolio -->
+    </section>
+
+    <!-- Sección Eventos-->
+    <section id="eventos">
+      <h2>Más sobre mi experiencia</h2>
+      <article class="event">
+        <figure class="event-imageContainer">
+          <img
+            class="event-image"
+            src="img/platzi-conf.jpg"
+            width="500"
+            alt=""
+          />
+        </figure>
+        <h3 class="event-title">PlatziConf México 2018</h3>
+        <p class="event-description">
+          El evento más grande sobre gente que quiere aprender más de internet.
+          En este evento te comparto como tener una vida de constante
+          aprendizaje
+        </p>
+        <a class="event-url" href="https://www.youtube.com/watch?v=YnphMCRsdXM"
+          >Ver Plática</a
+        >
+      </article>
+
+      <!-- End of Sección Eventos-->
+    </section>
+
+    <!-- Sección Contacto-->
+    <section id="contacto" class="contact">
+      <form class="form-email" action="/suscripcion/" method="post">
+        <h2>¿Creamos algo juntos?</h2>
+        <label for="email">Déjame tu email</label>
+        <input type="text" name="" id="email" placeholder="Déjame tu email" />
+        <input type="submit" value="Enviar" />
+      </form>
+      <!-- End of Sección Contacto-->
+    </section>
+
+    <footer class="footer">footer</footer>
   </body>
 </html>
