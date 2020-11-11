@@ -1,0 +1,294 @@
+/*==================================*/
+/*   Colors to Use on this project  */
+
+/* gris oscuro = #1d252c */
+/* gris claro = #626262 */
+/* background gris = #1b2127 */
+/* celeste = #026fff */
+/*==================================*/
+
+/*==================================*/
+/*           PRE-SET                */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Source Sans Pro, Roboto, sans-serif;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+/*For all headings*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+/* for h2 titles */
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 26px;
+  padding: 0;
+  display: inline-block;
+}
+
+.container {
+  padding: 0 10%;
+  width: 100%;
+  margin: 0;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+}
+
+/*           End of PRE-SET         */
+/*==================================*/
+
+/*==================================*/
+/*        Header Navigation         */
+.header {
+  background-color: #1d252c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 13px auto;
+}
+
+.menu li {
+  padding-left: 50px;
+}
+
+.menu .link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+.menu .link:hover {
+  border-bottom: 2px solid white;
+}
+/*     End of Header Navigation    */
+/*==================================*/
+
+/*==================================*/
+/*         Hero Section             */
+
+/*For hero title*/
+.hero {
+  height: 300px;
+  background-image: url('./img/hero.png');
+  background-color: #1d252c;
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: 84%;
+  background-position-y: 20px;
+  padding-top: 20px;
+  display: flex;
+}
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: white;
+  padding-top: 20px;
+  margin: 0;
+}
+.hero h1 strong {
+  color: rgb(0, 0, 255);
+}
+
+/*==================================*/
+/*    Project Section (Portafolio)  */
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.project-details {
+  width: 450px;
+}
+
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+.project-course {
+  color: #026fff;
+}
+
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.project-imageContainer {
+  width: 450px;
+}
+
+.project-image {
+  width: 450px;
+}
+/*    End of Project Section  */
+/*==================================*/
+
+/*==================================*/
+/*    Event Section */
+#eventos {
+  margin-bottom: 20px;
+}
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-list-title {
+  margin-left: 20px;
+}
+.event {
+  margin: 0 auto;
+  width: 450px;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f4fbff;
+  padding: 20px;
+}
+.event img {
+  width: 100%;
+  border-radius: 2px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*==================================*/
+/*    Contact Section */
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../img/twitter.svg');
+}
+.social-link.facebook {
+  background-image: url('../img/facebook.svg');
+}
+.social-link.github {
+  background-image: url('../img/github.svg');
+}
+.social-link.instagram {
+  background-image: url('../img/instagram.svg');
+}
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../img/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/*==================================*/
+/*    Footer */
+
+.footer {
+  color: white;
+  background-color: #1d252c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+}
